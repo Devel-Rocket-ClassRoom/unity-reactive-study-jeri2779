@@ -1,0 +1,10 @@
+{
+    "name": "Scripts.StudentPackage.CoinClicker",
+    "rootNamespace": "DIStudy.CoinClicker.Student",
+    "references": [
+        "VContainer",
+        "Unity.InputSystem",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI"
+    ]
+}

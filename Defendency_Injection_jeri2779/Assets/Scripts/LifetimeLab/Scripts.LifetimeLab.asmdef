@@ -1,0 +1,9 @@
+{
+    "name": "Scripts.LifetimeLab",
+    "rootNamespace": "DIStudy.LifetimeLab",
+    "references": [
+        "VContainer",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI"
+    ]
+}
