@@ -24,10 +24,7 @@ public class MyAsyncDemo : MonoBehaviour
 
     private void Start()
     {
-        // ── 틀: 비동기 작업을 SubscribeAwait + AwaitOperation 으로 처리 ──
-        // 참고: BasicExamples/13_AsyncStreamSample (SubscribeAwait Sequential / Drop)
-
-        // (A) Sequential: 연타해도 들어온 순서대로 하나씩 끝까지 처리(밀림, 손실 없음)
+         
         m_SequentialButton
             .OnClickAsObservable()
             .SubscribeAwait(
@@ -42,7 +39,7 @@ public class MyAsyncDemo : MonoBehaviour
             )
             .AddTo(this);
 
-        // (B) Drop: 작업 진행 중 들어온 클릭은 버림(중복 클릭 무시)
+    
         m_DropButton
             .OnClickAsObservable()
             .SubscribeAwait(
